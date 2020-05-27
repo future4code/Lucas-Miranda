@@ -37,6 +37,8 @@ div img {
     
 }
 
+
+
 .botao-amarelo {
     background-color: #ffaf43;
     width: 250px;
@@ -119,10 +121,20 @@ td button {
     color: black;
 }
 
+
+td button:hover{
+    background-color: #ffaf43;
+}
+
+td button:active{
+    color: white
+}
+
 .container-do-search {
     margin-top: 20px;
     height: 100px;
 }
+
 
 
 #back-button {
@@ -134,7 +146,8 @@ td button {
     font-size: 10px;
     color: black;
     position: absolute;
-    left: 100vh;
+    left: 50%;
+    margin-top: 5%;
 }
 
 #back-button:hover {

@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:  #d3d3d3;
+}
+
+h1{
+    text-align: center;
+}
+
+#title{
+    background-color: aqua;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+h2{
+    padding: 32px;
+}
+
+div > p{
+    padding: 32px;
+    background-color: blueviolet;
+}
+
+.menu{
+    margin-top: 10px;
+    text-decoration: none;
+   
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding-right: 12px;
+}
+
+p{
+    margin-top: 10px;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+section{
+    margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.img0{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+
+footer > p{
+
+    padding: 40px;
+    background-color: chocolate;
+    text-align: center;
+}
+
+table{
+    border-spacing: 16px;
+    margin: auto;
+
+}
+
+td{
+    text-align: center;
+}
+
+button{
+    border: 1px solid white;
+    box-shadow: white;
+    background-color: darkgreen;
+    width: 200px;
+    padding-top: 10px;
+    float: left;
+    margin-left: 2rem;
+
+    
+}
+
+.btnEnviar{
+    margin-top: 23px;
+    margin: 25px;
+    margin-left: 30rem;
+    margin-bottom: -27px;
+}
+
+ #form{
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+}

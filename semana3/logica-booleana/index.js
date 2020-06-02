@@ -99,9 +99,9 @@ console.log("A temperatura de Fahrenheit para Kelvin é ", kelvin, " °K")
 
 //b.
 let GRAUS_CELSIUS = prompt('Qual a temperatura  em graus celsius: ');
-let  GRAUS_FAHRENHEIT;
+let GRAUS_FAHRENHEIT;
 
-GRAUS_FAHRENHEIT = GRAUS_CELSIUS*9/5 + 32;
+GRAUS_FAHRENHEIT = (GRAUS_CELSIUS*9/5) + 32;
 console.log("A temperatura de Celsius para Fahrenheit é ", GRAUS_FAHRENHEIT, "°F")
 
 //A temperatura de Celsius para Fahrenheit é  176 °F */
@@ -120,14 +120,15 @@ console.log("A temperatura em Graus celsius para kelvin : ", GRAUS_KELVIN, " °K
 
 
 //d.
-let GRAUS_CELSIUS = prompt('Qual valor você deseja converter? ');
-let GRAUS_FAHRENHEIT = (GRAUS_CELSIUS - 32)*5/9 + 273.15;
-let GRAUS_KELVIN = (GRAUS_CELSIUS*9/5) + 32;
-console.log("A temperatura em Graus celsius para Farenheit em 30°: ", GRAUS_FAHRENHEIT, " °F ")
-console.log("A temperatura em Graus celsius para kelvin em 30° : ", GRAUS_KELVIN, " °K ")
+let converterGraus = prompt("Informe o valor em graus celsius: ")
+let valConvert = Number(converterGraus);
 
-//A temperatura em Graus celsius para Farenheit 30°:  272.0388888888889  °F 
-//index.js:120 A temperatura em Graus celsius para kelvin 30°:  86  °K 
+let GRAUS_KELVIN = (valConvert - 32) * 5/ 9 + 273.15;
+let GRAUS_FAHRENHEIT = (valConvert) * 9 /5  + 32;
+
+console.log("O valor convertido em Graus Celsius para Fahrenheit " + GRAUS_FAHRENHEIT + " e o valor convertido em kelvin " + GRAUS_KELVIN);
+
+//O valor convertido em Graus Celsius para Fahrenheit 86 e o valor convertido em kelvin 272.0388888888889
 
 
 let nome = prompt("Qual seu nome? ");

@@ -81,19 +81,19 @@ for(let item of array ){
 
 //d
 
-for(let i = 0; i<=array.length-1; i++){
+for(let i = 0; i<array.length-1; i++){
     console.log(`O elemento do index ${i}" e " ${array[i]}`)
 }
 /*
-O elemento do index 1" e " 30
-index.js:85 O elemento do index 2" e " 130
-index.js:85 O elemento do index 3" e " 40
-index.js:85 O elemento do index 4" e " 60
-index.js:85 O elemento do index 5" e " 21
-index.js:85 O elemento do index 6" e " 70
-index.js:85 O elemento do index 7" e " 120
-index.js:85 O elemento do index 8" e " 90
-index.js:85 O elemento do index 9" e " 103
-index.js:85 O elemento do index 10" e " 110
-index.js:85 O elemento do index 11" e " 55
+O elemento do index 0" e " 80
+VM23:2 O elemento do index 1" e " 30
+VM23:2 O elemento do index 2" e " 130
+VM23:2 O elemento do index 3" e " 40
+VM23:2 O elemento do index 4" e " 60
+VM23:2 O elemento do index 5" e " 21
+VM23:2 O elemento do index 6" e " 70
+VM23:2 O elemento do index 7" e " 120
+VM23:2 O elemento do index 8" e " 90
+VM23:2 O elemento do index 9" e " 103
+VM23:2 O elemento do index 10" e " 110
 */

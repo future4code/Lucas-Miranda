@@ -11,11 +11,12 @@
  * 
  */
 
-
+//começa  o jogo  
 let jogar = false;
+//faça
 do {
 
-   if(confirm("pergunta de sim ou não")) {
+   if(confirm("Quer iniciar uma nova rodada? ")) {
       //o que fazer se o usuário clicar "OK"
       jogar = true;
    } else {
@@ -23,18 +24,21 @@ do {
       jogar = false;
    }
 
+//Início do jogo
 if("Iniciar o jogo BlackJack"){
    carta1 = comprarCarta();
    carta2 = comprarCarta();
    carta3 = comprarCarta();
    carta4 = comprarCarta();
+   user = (carta1.valor) + (carta2.valor) > (carta3.valor) + (carta4.valor); // Variaveis que verifica a soma o das cartas são maiores ou menores
+   computer = (carta1.valor) + (carta2.valor) < (carta3.valor) + (carta4.valor);
 
    
-
+   // Imprime no console o usuário, as cartas e a pontuação
    console.log("Usuário - cartas:", carta1.texto, carta2.texto, "Pontuação: ", carta1.valor + carta2.valor );
    console.log("computador - cartas: ", carta3.texto, carta4.texto, "Pontuação: ", carta3.valor + carta4.valor);
 
-
+   // Lógica do jogo veirifica quem ganhou, quem perdeu ou deu empate.
    if((carta1.valor) + (carta2.valor) === (carta3.valor) + (carta4.valor)){
       console.log("EMPATE!");   
 
@@ -47,7 +51,7 @@ if("Iniciar o jogo BlackJack"){
    
 }
 else{
-   console.log("O jogo acabou!");
+   console.log("O jogo acabou!");// Imprime fim da rodada 
 }
 
-}while(jogar != false);
+}while(jogar != false); // enquanto a variável jogar for diferente de false, ou seja quando apertar no cancel finaliza a rodada.

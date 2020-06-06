@@ -12,7 +12,8 @@
  */
 
 //começa  o jogo  
-let jogar = false;
+let jogar = false; 
+
 //faça
 do {
 
@@ -30,8 +31,6 @@ if("Iniciar o jogo BlackJack"){
    carta2 = comprarCarta();
    carta3 = comprarCarta();
    carta4 = comprarCarta();
-   user = (carta1.valor) + (carta2.valor) > (carta3.valor) + (carta4.valor); // Variaveis que verifica a soma o das cartas são maiores ou menores
-   computer = (carta1.valor) + (carta2.valor) < (carta3.valor) + (carta4.valor);
 
    
    // Imprime no console o usuário, as cartas e a pontuação

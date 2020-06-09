@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js" defer></script>
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <div class="container">
+        <label for="nova_task">Nova Tarefa</label>
+        <input type="text" id="nova_task" value="" name="novaTask">
+        <select name="diaDaSemana" id="diaDaSemana">
+            <option value="segunda">Segunda-Feira</option>
+            <option value="terca">Terça-Feira</option>
+            <option value="quarta">Quarta-Feira</option>
+            <option value="quinta">Quinta-Feira</option>
+            <option value="sexta">Sexta-Feira</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+        </select>
+        <button onclick="criarTarefa(); riscado()">Criar Tarefa!</button>
+        <button onclick= "limpar();" id="diaDaSemana">Limpar</button>
+    </div>
+
+    <hr>
+
+   <main>
+     <div class="segunda">
+            Segunda
+        <ul id="segunda">
+
+        </ul>
+     </div>
+     <div class="terca">
+            Terça
+        <ul id="terca">
+            
+        </ul>
+     </div>
+     <div class="quarta">
+            Quarta
+        <ul id="quarta">
+            
+        </ul>
+     </div>
+     <div class="quinta">
+            Quinta
+        <ul id="quinta">
+           
+        </ul>
+     </div>
+     <div class="sexta">
+            Sexta
+        <ul id="sexta"></ul>
+     </div>
+     <div class="sabado">
+            Sábado
+           
+        <ul id="sabado"></ul>
+     </div>
+     <div class="domingo">
+            Domingo
+        <ul id="domingo">
+            
+        </ul>
+     </div>
+   </main> 
+</body>
+</html>

@@ -28,14 +28,15 @@ main>div{
 
 @media only screen and (max-width: 375px) and (min-width:600px) {
     body{
-        margin:5px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .container{
         display: inline;
         justify-content: center;
-        align-items: stretch;
-        margin: 20px 0; 
+        margin: 20px 0;   
     }
 
     main{
@@ -54,7 +55,7 @@ main>div{
         margin: 10px;
         padding: 10px;
         height: 50vh;
-        min-width: 250px;
+        min-width: 322px;
         font-size: 30px;
     }
 

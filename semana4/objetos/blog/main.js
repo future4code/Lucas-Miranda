@@ -7,6 +7,7 @@ function capturarFilme(){
     let description = document.getElementById('description'); 
     let textoDigitadoNatela = document.getElementById('container-post');
 
+
     if((title.value !== "" ) && (author.value !=="") && (description.value !=="")){
         textoDigitadoNatela.innerHTML += `<p>${title.value}</p><p> ${author.value}</p><p>${description.value}</p>`;
         let Filmes ={

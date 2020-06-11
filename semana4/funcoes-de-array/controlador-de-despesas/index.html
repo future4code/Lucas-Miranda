@@ -28,7 +28,7 @@
             <button onclick="limparCadastro()">Limpar Cadastro</button>
         </div>
     </section>
-
+   
     <section>
         <h1>Despesas Detalhadas</h1>
         <div id="Details">
@@ -36,11 +36,21 @@
             <input type="text" name="" id="maximo">
             <label for="">Valor Minímo</label>
             <input type="text" name="" id="minimo">
-            <button onclick="mostrarDespesas()">Filtrar</button>
+            <select id="options2">
+                <option value="casa">Casa</option>
+                <option value="refeicões">Refeições</option>
+                <option value="lazer">Lazer</option>
+                <option value="viagens">Viagens</option>
+            </select>
+            
+            <button onclick="mostrarDespesas()" >Filtrar</button>
             <button>Limpar Filtros</button>
         </div>
     </section>
 
+    <div id="listaDespesa">
+
+    </div>
 
     <section>   
         <div id="amount">

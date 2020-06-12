@@ -42,6 +42,15 @@ function mostrarDespesas(){
     let tipo = document.getElementById("options");
     let listaDespesa = document.getElementById("listaDespesa"); 
 
+    listaDespesa.innerHTML += `
+    <div><p>valor: ${valor.value}</p>
+    <p>Descrição:${description.value}<p>
+    <p>Tipo:${tipo.value}</p>
+    </div>
+    `
+}
+
+function filtrar(){
     let filterDespesas =  arrayDespesa.filter((despesa, idx, arr ) =>{
         return despesa.tipo === tipo.value
         
@@ -54,12 +63,10 @@ function mostrarDespesas(){
         return despesa.valor === valor.value
         
     })
-    console.log(filterDespesas);
-   
-        
-    listaDespesa.innerHTML += `
-    <p>valor: ${valor.value}</p>
-    <p>Descrição:${description.value}<p>
-    <p>Tipo:${tipo.value}</p>
-    `
+
+   let teste = document.getElementById("listaFiltrar") 
+    
+    
+    teste.innerHTML += `<div><p>valor: ${valor.value}</p>  <p>Descrição:${description.value}<p><p>Tipo:${tipo.value}</p></div>`
+           
 }

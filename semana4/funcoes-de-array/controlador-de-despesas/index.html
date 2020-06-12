@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <h1>CONTROLADOR DAS DESPESAS</h1>
+        <h2>Cadastrar Despesas </h2>
+
+        <div id ="register">
+            <label for="">valor: </label>
+            <input type="text" name="" id="valor">
+            <label for="">Tipo: (Casa, refeições, lazer, etc...): </label>
+            <select id="options">
+                <option value="casa">Casa</option>
+                <option value="refeicões">Refeições</option>
+                <option value="lazer">Lazer</option>
+                <option value="viagens">Viagens</option>
+            </select>
+            <label>Descrição</label>
+            <input type="text" name="" id="description">
+            <button onclick="validarCadastro()">Cadastrar Despesa</button>
+            <button onclick="limparCadastro()">Limpar Cadastro</button>
+        </div>
+    </section>
+   
+    <section>
+        <h1>Despesas Detalhadas</h1>
+        <div id="Details">
+            <label for="">Valor Máximo</label>
+            <input type="text" name="" id="maximo">
+            <label for="">Valor Minímo</label>
+            <input type="text" name="" id="minimo">
+            <select id="options2">
+                <option value="casa">Casa</option>
+                <option value="refeicões">Refeições</option>
+                <option value="lazer">Lazer</option>
+                <option value="viagens">Viagens</option>
+            </select>
+            
+            <button onclick="mostrarDespesas()" >Filtrar</button>
+            <button>Limpar Filtros</button>
+        </div>
+    </section>
+
+    <div id="listaDespesa">
+
+    </div>
+
+    <section>   
+        <div id="amount">
+            <h1>Extrato</h1>
+            <h2>Valor Total</h2>
+        </div>
+    </section>
+</body>
+</html>

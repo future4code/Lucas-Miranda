@@ -14,8 +14,9 @@ function validarCadastro(){
     let valor =  document.getElementById("valor"); 
     let description = document.getElementById("description");
     let tipo = document.getElementById("options");
-    if((valor.value !== "") || (description.value != "") || (tipo.value!=="")){
+    if((valor.value === "") || (description.value === "") || (tipo.value ==="")){
     
+        alert("Preencha o campo, porfavor!!!")
 
         const despesa={
             valor: valor.value,
@@ -27,7 +28,7 @@ function validarCadastro(){
         console.log(arrayDespesa);
              
     }else{
-      alert("Campo não validado");
+      mostrarDespesas()
     }
 }
 

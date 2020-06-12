@@ -38,15 +38,27 @@ let arrayDespesa = [
 function mostrarDespesas(){
     let valor =  document.getElementById("valor"); 
     let description = document.getElementById("description");
-    let tipo = document.getElementById("options")
+    let tipo = document.getElementById("options");
     let listaDespesa = document.getElementById("listaDespesa"); 
 
     let filterDespesas =  arrayDespesa.filter((despesa, idx, arr ) =>{
         return despesa.tipo === tipo.value
         
     })
-    console.log(filterDespesas);
+    filterDespesas =  arrayDespesa.filter((despesa, idx, arr ) =>{
+        return despesa.description === description.value
         
-    listaDespesa.innerHTML += `<p>valor: ${valor.value}</p>Descrição:${description.value}<p>Tipo:${tipo.value}<p>`
+    })
+    filterDespesas =  arrayDespesa.filter((despesa, idx, arr ) =>{
+        return despesa.valor === valor.value
+        
+    })
+    console.log(filterDespesas);
+   
+        
+    listaDespesa.innerHTML += `
+    <p>valor: ${valor.value}</p>
+    <p>Descrição:${description.value}<p>
+    <p>Tipo:${tipo.value}</p>
+    `
 }
-

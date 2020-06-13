@@ -39,9 +39,9 @@ while(i < quantidadeDeNumerosPares) {
   console.log(i*2)
   i++
 }
-//Não estava funcionando porque a variável constante quantidadeDeNumerosPar estava sem valor(undefined) e enquanto i for menor que a quantidade de números pares ele iria contar e imprimir no console sempre os múltiplos de 2 que é par 5 vezes .
+//Não estava funcionando, porque a variável constante quantidadeDeNumerosPar estava sem valor(undefined) e enquanto i for menor que a quantidade de números pares ele iria contar e imprimir no console sempre os múltiplos de 2 que é par 5 vezes .
 
-/*
+
 const triangulo = (a, b, c)=>{
   if ((a ===b ) && (a===c)){
       console.log("Equilatero")
@@ -54,7 +54,7 @@ const triangulo = (a, b, c)=>{
 triangulo(3,5,2)
 
 
-/*
+
 let num1 = prompt("Informe o número 1: ")
 let num2 = prompt ("Informe o número 2: ")
 if(num1 > num2){
@@ -80,4 +80,3 @@ if(num1 < num2){
     let num3 = num1 - num2
     console.log(`A difença entre eles é  ${num3}`)
 }
-*/

@@ -14,7 +14,7 @@ console.log (dobroDoArray);
 
 let triploDoArray = [];
 array.forEach((number, index, array)=>{
-    triploDoArray.push(number * 3);
+    triploDoArray.push("" +number * 3);
 })
 console.log(triploDoArray);
 //(6) [3, 6, 9, 12, 15, 18]
@@ -42,4 +42,4 @@ console.log(parImpar);
 //3: "4 é par"
 //4: "5 é ímpar"
 //5: "6 é par"
-//length: 6
+length: 6

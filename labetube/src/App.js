@@ -9,6 +9,10 @@ function App() {
       alert("O vídeo está sendo reproduzido! =) ")
     }
 
+    function focus(){
+        document.getElementsByClassName("botoes-menu-vertical")
+    }
+
   return (
     <div>
        <div className="tela-inteira">
@@ -18,14 +22,14 @@ function App() {
         </header>
 
         <main>
-            <nav class="menu-vertical">
+            <nav className="menu-vertical">
                 <ul>
-                    <li className="botoes-meunu-vertical">Início</li>
-                    <li className="botoes-meunu-vertical">Em alta</li>
-                    <li class="botoes-meunu-vertical">Inscrições</li>
+                    <li className="botoes-meunu-vertical" onFocus={focus}>Início</li>
+                    <li className="botoes-meunu-vertical" onFocus={focus}>Em alta</li>
+                    <li className="botoes-meunu-vertical" onFocus={focus}>Inscrições</li>
                     <hr />
-                    <li className="botoes-meunu-vertical">Originais</li>
-                    <li className="botoes-meunu-vertical">Histórico</li>
+                    <li className="botoes-meunu-vertical" onFocus={focus}>Originais</li>
+                    <li className="botoes-meunu-vertical" onFocus={focus}>Histórico</li>
                 </ul>
             </nav>
             

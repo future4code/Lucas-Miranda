@@ -31,8 +31,13 @@ main {
   border-right-width: thin;
 }
 
-.botoes-meunu-vertical {
+
+.botoes-meunu-vertical{
   list-style-type: none;
+}
+
+.botoes-meunu-vertical:hover{
+  background-color: coral;
 }
 
 .painel-de-videos {

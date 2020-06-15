@@ -10,7 +10,7 @@ function App() {
     }
 
     function focus(){
-        document.getElementsByClassName("botoes-menu-vertical")
+        document.getElementsByClassName("botoes-meunu-vertical")
     }
 
   return (

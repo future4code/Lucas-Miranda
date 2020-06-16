@@ -1,0 +1,19 @@
+.page-section-container > .section-email{
+    background-color: violet;
+}
+.box{
+    border: 1px solid;
+    margin-top: 10px;
+    display: flex ;
+}
+.imgEmail{
+    width: 30px;
+}
+.imgLocalizacao{
+    width: 30px;
+}
+
+.App{
+    margin: 0 auto;
+    background-color: rgba(236, 236, 89, 0.767);
+}

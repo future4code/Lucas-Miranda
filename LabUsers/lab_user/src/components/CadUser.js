@@ -27,11 +27,11 @@ export class CadUser extends React.Component{
         <CadUser>
             <div>
                 <label>Name: </label>
-                <input type="text"  value={this.state.name} /><br/>
+                <input type="text" onChange={this.onChangeName}  value={this.state.name} /><br/>
             </div>
             <div>
                 <label>E-mail: </label>
-                <input type="email" value={this.state.email} /><br/>
+                <input type="email"  onChange={this.onChangeName} value={this.state.email} /><br/>
             </div>
             <button onClick={this.criarNovoUser}>Salvar</button>
         </CadUser>

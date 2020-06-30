@@ -9,13 +9,9 @@ import {ListaUser} from './components/ListaUser';
 class App extends React.Component{
 
   state = {
-    userlistValue: [
-      {
-        name: "",
-        email: ""
-      }
-    ]
-  }
+    name: "",
+    email: ""
+  };
 
  componentDidMount =()=>{
    this.getAllUsers();
@@ -25,6 +21,14 @@ class App extends React.Component{
   const body = {
   name: this.state.userlistValue
   };
+ }
+
+ onchangeName = (e) =>{
+   this.setState({name: e.target.value})
+ }
+
+ onchangeEmail = (e) =>{
+   this.setState({email: e.target.value})
  }
 
  getAllUsers = () =>{
@@ -42,6 +46,7 @@ class App extends React.Component{
      this.setState({userlistValue: response.data.result.email})
    })
    .catch(error => {
+     window.alert("Não foi possível cadastrar usuário. =(")
      console.log(error.data);
    });
  };
@@ -68,9 +73,11 @@ class App extends React.Component{
  
 
  render(){
-     <CadUser criarNovoUser/>
    return(
-     <ListaUser criarNovoUser />
+     <div>
+       <CadUser />
+       <ListaUser />
+     </div>
    )
  }
 

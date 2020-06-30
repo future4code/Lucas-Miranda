@@ -42,8 +42,8 @@ class App extends React.Component{
      }
     )
    .then(response =>{
-     this.setState({userlistValue: response.data.result.name})
-     this.setState({userlistValue: response.data.result.email})
+     this.setState({name: response.data.result.name})
+     this.setState({email: response.data.result.email})
    })
    .catch(error => {
      window.alert("Não foi possível cadastrar usuário. =(")
@@ -63,8 +63,8 @@ class App extends React.Component{
       }
      )
     .then(response =>{
-      this.setState({userlistValue: response.data.result.name})
-      this.setState({userlistValue: response.data.result.email})
+      this.setState({name: response.data.result.name})
+      this.setState({email: response.data.result.email})
     })
     .catch(error => {
       console.log(error.data);

@@ -19,7 +19,7 @@ class App extends React.Component{
 
  criarNovoUser = () =>{
   const body = {
-  name: this.state.userlistValue
+  name: this.state.name
   };
  }
 

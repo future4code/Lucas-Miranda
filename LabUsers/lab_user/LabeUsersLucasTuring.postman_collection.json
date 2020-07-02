@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "6b157cdb-7a71-4b93-b6b3-faf31d443bc4",
+		"name": "LabeUsersLucasTuring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Lucas-Alencar-Turing",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"francisco\",\r\n    \"email\": \"fran@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users\n",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labenusers",
+						"users\n"
+					]
+				},
+				"description": "Essa requisição cria um novo usuário."
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUsers ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Lucas-Alencar-Turing",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users\n",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labenusers",
+						"users\n"
+					]
+				},
+				"description": "Esta requisição serve para ver o id e o name de todos os usuários"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteAllUsers",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Lucas-Alencar-Turing",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/:id\n",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labenusers",
+						"users",
+						":id\n"
+					],
+					"variable": [
+						{
+							"key": "id\n",
+							"value": "2f93fea6-3a80-4db9-958c-c2a0377de91a"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
